@@ -37,7 +37,7 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form action='<?php echo base_url('index.php/login/login_user'); ?>' method='post' name='process'>
+                  <form action='<?php echo site_url('MY_Admin/login'); ?>' method='post' name='process'>
                   <?php echo validation_errors(); ?>
                     <div class="form-group">
                       <input type="email" class="form-control form-control-user" id="user_email" name="user_email" aria-describedby="emailHelp" placeholder="Enter Email Address..." required>

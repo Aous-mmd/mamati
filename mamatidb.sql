@@ -16,6 +16,35 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `tbl_slider`
+--
+
+DROP TABLE IF EXISTS `tbl_slider`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_slider` (
+  `slider_id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_name` varchar(128) NOT NULL,
+  `isDeleted` tinyint(4) NOT NULL DEFAULT 0,
+  `insert_id` int(11) NOT NULL,
+  `insert_date` datetime NOT NULL,
+  `updated_id` int(11) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`slider_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_slider`
+--
+
+LOCK TABLES `tbl_slider` WRITE;
+/*!40000 ALTER TABLE `tbl_slider` DISABLE KEYS */;
+INSERT INTO `tbl_slider` VALUES (1,'1',0,1,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(2,'2',0,1,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34');
+/*!40000 ALTER TABLE `tbl_slider` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tbl_users`
 --
 
@@ -33,7 +62,7 @@ CREATE TABLE `tbl_users` (
   `updated_id` int(11) DEFAULT NULL,
   `updated_date` datetime DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +71,7 @@ CREATE TABLE `tbl_users` (
 
 LOCK TABLES `tbl_users` WRITE;
 /*!40000 ALTER TABLE `tbl_users` DISABLE KEYS */;
-INSERT INTO `tbl_users` VALUES (1,'admin@example.com','$2y$10$6NOKhXKiR2SAgpFF2WpCkuRgYKlSqFJaqM0NgIM3PT1gKHEM5/SM6','System Administrator',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(2,'admin','admin','System Administrator',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(3,'admin@admin.com','admin','System Administrator',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34');
+INSERT INTO `tbl_users` VALUES (1,'admin@example.com','$2y$10$6NOKhXKiR2SAgpFF2WpCkuRgYKlSqFJaqM0NgIM3PT1gKHEM5/SM6','System Administrator',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(2,'admin','admin','System Administrator',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(3,'My user_email','My user_password','My duser_nameate',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(7,'My user_email','My user_password','My duser_nameate',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34'),(8,'aous@aous.com','aous','aous',0,0,'2020-06-04 18:56:49',0,'2020-06-04 20:56:34');
 /*!40000 ALTER TABLE `tbl_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-06 12:05:36
+-- Dump completed on 2020-06-07 17:05:51

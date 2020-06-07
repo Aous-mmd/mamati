@@ -5,7 +5,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= site_url('/dashboard'); ?>">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= site_url('MY_Admin/dashboard'); ?>">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -17,7 +17,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="<?= site_url('/dashboard'); ?>">
+        <a class="nav-link" href="<?= site_url('MY_Admin/dashboard'); ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -30,7 +30,7 @@
         Sections
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item - Pages Collapse Menu
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
@@ -49,7 +49,7 @@
             <a class="collapse-item" href="blank.html">Blank Page</a>
           </div>
         </div>
-      </li>
+      </li> -->
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -90,7 +90,7 @@
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profile
                 </a> -->
-                <a class="dropdown-item" href="<?= site_url('setting'); ?>">
+                <a class="dropdown-item" href="<?= site_url('MY_Admin/dsh_setting'); ?>">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Settings
                 </a>
@@ -99,7 +99,7 @@
                   Activity Log
                 </a> -->
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="<?= site_url('logout'); ?>">
+                <a class="dropdown-item" href="<?= site_url('MY_Admin/logout'); ?>">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
